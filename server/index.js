@@ -32,6 +32,8 @@ app.use(
 app.use(helmet());
 app.use(hpp());
 
+//! test route
+app.get('/', (req, res) => res.send('Server is running!'));
 //! routes
 app.use('/api/user', userRouter);
 app.use('/api/event', eventRouter);
